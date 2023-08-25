@@ -6,7 +6,7 @@ RUN pip install Flask==2.2.2
 RUN pip install psycopg2-binary
 RUN pip install flask_sqlalchemy
 
-
+WORKDIR /app
 
 COPY . /analytics
 
