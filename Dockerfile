@@ -2,10 +2,8 @@
 FROM python:3.8
 
 WORKDIR /app
-RUN pip install APScheduler
-RUN pip install Flask==2.2.2
-RUN pip install psycopg2-binary
-RUN pip install flask_sqlalchemy
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 
 
