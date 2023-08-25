@@ -7,9 +7,10 @@ RUN pip install -r requirements.txt
 
 
 
+
 COPY . /analytics
 
-CMD ["python", "/analytics/app.py"]  
+CMD ["python", "app.py","postgres","Q2r6SNK61v"]  
 
 
 
