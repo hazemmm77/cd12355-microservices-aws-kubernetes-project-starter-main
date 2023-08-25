@@ -6,13 +6,15 @@ ADD ../analytics/requirements.txt /app/requirements.txt
 ADD ../analytics /app/
 
 RUN pip install -r requirements.txt
+ENV username db_username
+ENV password db_password
 
 
 
 
 
 
-CMD ["python", "app.py","postgres","Q2r6SNK61v"]  
+CMD ["python", "app.py",db_username,password]  
 
 
 
