@@ -1,5 +1,5 @@
 #This is a sample Image 
-FROM python
+FROM python:3.8
 
 WORKDIR /app
 RUN pip install APScheduler
