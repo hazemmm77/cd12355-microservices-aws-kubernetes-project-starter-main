@@ -65,7 +65,7 @@ We will need to run the seed files in `db/` in order to create the tables and po
 ```bash
 kubectl port-forward --namespace default svc/<SERVICE_NAME>-postgresql 5432:5432 &
     PGPASSWORD="$POSTGRES_PASSWORD" psql --host 127.0.0.1 -U postgres -d postgres -p 5432 < <FILE_NAME.sql>
-```
+
 
 ### 2. Running the Analytics Application Locally
 In the `analytics/` directory:
